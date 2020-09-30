@@ -3,7 +3,7 @@ const qText = document.querySelector('#quoteText')
 const qAuthor = document.querySelector('#quoteAuthor')
 const generateBtn = document.querySelector('#generate')
 
-// Loading Quotes...
+// Loading Quotes....
 
 const loadQuote = () => {
     generateBtn.style.display = 'none'
