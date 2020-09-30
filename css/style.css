@@ -1,0 +1,93 @@
+@font-face{
+    font-family: Avante Garde;
+    src: url('../fonts/Avant_Garde_Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Avant Garde;
+    background-color: cornflowerblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 70vh;
+    /* width: 400px; */
+}
+.quote{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.334);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    padding: 50px;
+}
+.header{
+    padding: 15px;
+    color: ivory;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header i{
+    font-size: 1.5rem;
+    margin-right: -40px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all .8s ease;
+    display: block;
+}
+.header i:hover{
+    transform: rotate(180deg);
+}
+.header h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.body{
+    padding: 15px;
+    color: ivory;
+    padding-bottom: 40px;
+    animation: anime1 1s ease 0s 1 normal forwards;
+}
+.body h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.body em{
+    text-align: center;
+}
+.body button{
+    outline: none;
+    border: 2px solid ivory;
+    background: transparent;
+    color: ivory;
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    left: 30%;
+    position: absolute;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.body button:hover{
+    background-color: ivory;
+    color: cornflowerblue;
+}
+
+
+@keyframes anime1{
+    0%{
+        /* transform: rotateX(90deg); */
+        margin-top: -55px;
+        opacity: 0;
+    }
+    100%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
